@@ -1,0 +1,50 @@
+{
+  "name": "caw-scripts",
+  "version": "0.1.0",
+  "description": "Crema App Web as a package",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "caw-scripts": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "templateApp",
+    "_templates"
+  ],
+  "scripts": {
+    "start": "rimraf dist && tsc -w",
+    "test": "node dist"
+  },
+  "dependencies": {
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-centered": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@testing-library/react": "^9.3.2",
+    "@types/cross-spawn": "^6.0.1",
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.12",
+    "@types/react": "16.9.13",
+    "@types/react-dom": "16.9.4",
+    "cross-spawn": "^7.0.1",
+    "eslint": "^6.7.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-cypress": "^2.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "hygen": "^5.0.3",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "typescript": "3.7.2",
+    "webpack": "4.41.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0"
+  }
+}

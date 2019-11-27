@@ -1,0 +1,38 @@
+{
+  "name": "template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "caw-scripts": "file:../caw/caw-scripts-1.0.0.tgz"
+  },
+  "scripts": {
+    "start": "caw-scripts start",
+    "build": "caw-scripts build",
+    "lint": "caw-scripts lint",
+    "test": "caw-scripts test"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!node_modules",
+      "!src/**/*.stories.{ts,tsx}",
+      "!src/**/*.test.{ts,tsx}",
+      "!src/**/index.{ts,tsx}",
+      "!src/index.tsx",
+      "!**/*.d.ts",
+      "!src/serviceWorker.ts",
+      "src/**/*.{ts,tsx}"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
