@@ -1,33 +1,32 @@
 import spawn from "cross-spawn"
-import { pathPackage as pathPackageGet } from "./paths"
+import { pathPackageGet } from "./paths"
 import { args as extraArgs } from "./args"
+import { SpawnOptions } from "child_process"
 
 export const runBinary = (
   bin: string,
   args?: string[],
   withExtraArgs = true,
+  config?: SpawnOptions,
 ) => {
   const pathPackage = pathPackageGet()
   const installed = pathPackage.includes("node_modules")
-  console.log("installed", installed, pathPackage)
   if (installed) {
     return spawn.sync(
       bin,
       [...(args ? args : []), ...(withExtraArgs ? extraArgs() : [])],
       {
         stdio: "inherit",
+        ...config,
       },
     )
   } else {
     return spawn.sync(
-      "node",
-      [
-        pathPackage + "/node_modules/.bin/" + bin,
-        ...(args ? args : []),
-        ...(withExtraArgs ? extraArgs() : []),
-      ],
+      "node " + pathPackage + "/node_modules/.bin/" + bin,
+      [...(args ? args : []), ...(withExtraArgs ? extraArgs() : [])],
       {
         stdio: "inherit",
+        ...config,
       },
     )
   }

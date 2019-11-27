@@ -3,13 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "caw-scripts": "file:../caw/caw-scripts-1.0.0.tgz"
+    "caw-scripts": "0.1.0"
   },
   "scripts": {
     "start": "caw-scripts start",
     "build": "caw-scripts build",
-    "lint": "caw-scripts lint",
-    "test": "caw-scripts test"
+    "new:component": "caw-scripts new component",
+    "new:type": "caw-scripts new type",
+    "new:util": "caw-scripts new util",
+    "test:lint": "caw-scripts lint",
+    "test:playground": "caw-scripts playground",
+    "test:unit": "caw-scripts test",
+    "test:visual": "caw-scripts test:visual"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [
@@ -17,22 +34,23 @@
       "!src/**/*.stories.{ts,tsx}",
       "!src/**/*.test.{ts,tsx}",
       "!src/**/index.{ts,tsx}",
-      "!src/index.tsx",
+      "!src/*.{ts,tsx}",
       "!**/*.d.ts",
       "!src/serviceWorker.ts",
       "src/**/*.{ts,tsx}"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "loki": {
+    "configurations": {
+      "chrome": {
+        "deviceScaleFactor": 1,
+        "fitWindow": false,
+        "height": 800,
+        "mobile": false,
+        "target": "chrome.docker",
+        "width": 800
+      }
+    },
+    "requireReference": true
   }
 }

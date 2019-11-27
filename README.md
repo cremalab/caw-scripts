@@ -1,6 +1,6 @@
 # CAW Scripts 🦜
 
-`caw-scripts` is an attempt to bundle up everything in `crema-app-web` as a dependency to allow consumers to take easy advantage of updates as an npm package.
+`caw-scripts` bundles up everything in `crema-app-web` as a dependency to allow consumers to take easy advantage of updates as an npm package.
 
 The exact method for setup is still a work in progress. Also, this first approach doesn't expose any additional dependencies to the consumer—e.g. react, react-dom, typescript—but we probably would. This is still an experiment. Feedback welcome!
 
@@ -8,9 +8,10 @@ The exact method for setup is still a work in progress. Also, this first approac
 
 ### From caw-scripts directory
 
-1. Build it: `npm start`
-2. Pack it: `npm pack`
-3. right-click and copy the absolute path to the `caw-scripts-0.1.0.tgz`
+1. Install dependencies: `npm i` 
+2. Build it: `npm start`
+3. Pack it: `npm pack`
+4. right-click and copy the absolute path to the `caw-scripts-0.1.0.tgz`
 
 ### From consumer directory
 

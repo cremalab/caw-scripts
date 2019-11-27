@@ -1,3 +1,8 @@
 import { runBinary } from "../utils/runBinary"
 
-runBinary("react-scripts", ["build"])
+runBinary("react-scripts", ["build"], true, {
+  env: {
+    ...process.env,
+    EXTEND_ESLINT: "true",
+  },
+})

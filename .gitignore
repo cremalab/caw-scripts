@@ -6,6 +6,7 @@
 
 # Build Artifacts
 dist/
+package/
 
 # Logs
 logs
