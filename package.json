@@ -23,7 +23,9 @@
     "test:ci": "npm-run-all test:lint test:unit",
     "test:lint": "eslint -c ./.eslintrc.js '**/*.{ts,tsx}' --ignore-pattern '/dist/'",
     "test:lint:fix": "npm run test:lint -- --fix",
-    "test:unit": "jest --passWithNoTests"
+    "test:types": "tsc",
+    "test:unit": "jest --passWithNoTests",
+    "test:unit:coverage": "npm run test:unit -- --coverage --watchAll=false"
   },
   "dependencies": {
     "@storybook/addon-actions": "^5.2.6",
