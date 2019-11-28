@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`dist works 1`] = `
-"
-/Users/Rob_LaFeve/Dev/caw-scripts/dist
-├── index.d.ts
+"├── index.d.ts
 ├── index.js
 ├── index.js.map
 ├── scripts
@@ -51,7 +49,7 @@ exports[`dist works 1`] = `
 directory: 2 file: 42
 
 ignored
+[39m[22m
 
-
-[2K[1G"
+[2K[1G,"
 `;
