@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dist works 1`] = `
+"
+/Users/Rob_LaFeve/Dev/caw-scripts/dist
+├── index.d.ts
+├── index.js
+├── index.js.map
+├── scripts
+|  ├── build.d.ts
+|  ├── build.js
+|  ├── build.js.map
+|  ├── dev.d.ts
+|  ├── dev.js
+|  ├── dev.js.map
+|  ├── init.d.ts
+|  ├── init.js
+|  ├── init.js.map
+|  ├── lint.d.ts
+|  ├── lint.js
+|  ├── lint.js.map
+|  ├── new.d.ts
+|  ├── new.js
+|  ├── new.js.map
+|  ├── playground.d.ts
+|  ├── playground.js
+|  ├── playground.js.map
+|  ├── playgroundBuild.d.ts
+|  ├── playgroundBuild.js
+|  ├── playgroundBuild.js.map
+|  ├── start.d.ts
+|  ├── start.js
+|  ├── start.js.map
+|  ├── test.d.ts
+|  ├── test.js
+|  └── test.js.map
+└── utils
+   ├── answerPrompts.d.ts
+   ├── answerPrompts.js
+   ├── answerPrompts.js.map
+   ├── args.d.ts
+   ├── args.js
+   ├── args.js.map
+   ├── paths.d.ts
+   ├── paths.js
+   ├── paths.js.map
+   ├── runBinary.d.ts
+   ├── runBinary.js
+   └── runBinary.js.map
+
+directory: 2 file: 42
+
+ignored
+
+
+[2K[1G"
+`;
