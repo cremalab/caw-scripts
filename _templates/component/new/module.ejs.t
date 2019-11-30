@@ -6,6 +6,12 @@ import React, { useState } from "react"
 
 type Props = Readonly<{ name: string }>
 
+/**
+ * <%= name %>
+ * ----------------------------------------------------
+ * DESCRIPTION_HERE
+ */
+
 export function <%= name %>({ name }: Props) {
   const [count, setCount] = useState(0)
   return (
@@ -19,6 +25,12 @@ export function <%= name %>({ name }: Props) {
 import React from "react"
 
 type Props = Readonly<{ name: string }>
+
+/**
+ * <%= name %>
+ * ----------------------------------------------------
+ * DESCRIPTION_HERE
+ */
 
 export function <%= name %>({ name }: Props) {
   return <div className="<%= name %>">{name}</div>

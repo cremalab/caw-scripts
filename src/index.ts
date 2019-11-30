@@ -14,6 +14,7 @@ switch (script) {
   case "playgroundBuild":
   case "setup":
   case "start":
+  case "test:visual":
   case "test": {
     const result = spawn.sync(
       "node",

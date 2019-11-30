@@ -1,9 +1,9 @@
 import spawn from "cross-spawn"
-import { pathPackage } from "../utils/paths"
+import { pathPackageGet } from "../utils/paths"
 import path from "path"
 
 const pathPackageStorybook = () =>
-  path.join(pathPackage(), "/dist/projectData/web/.storybook")
+  path.join(pathPackageGet(), "/dist/projectData/web/.storybook")
 
 console.log("pathPackageStorybook", pathPackageStorybook)
 
