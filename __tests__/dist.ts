@@ -7,6 +7,8 @@ describe("dist", () => {
     spawn.sync("npm", ["run", "build"])
     process.chdir("./dist")
     const tree = spawn.sync("treee", ["-a", "-l 6"]).output.toString()
-    expect(trimEnds(tree)).toMatchSnapshot()
+    expect(
+      trimEnds(tree).replace(/(\/.*\/dist)/, "/<PROJECT_DIR>/dist"),
+    ).toMatchSnapshot()
   })
 })

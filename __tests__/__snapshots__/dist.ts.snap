@@ -2,7 +2,7 @@
 
 exports[`dist works 1`] = `
 "
-/Users/Rob_LaFeve/Dev/caw-scripts/dist
+/<PROJECT_DIR>/dist
 ├── index.d.ts
 ├── index.js
 ├── index.js.map
