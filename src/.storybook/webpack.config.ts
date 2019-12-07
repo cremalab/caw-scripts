@@ -12,7 +12,7 @@ export default ({ config }: { config: Configuration }) => {
       },
     })
     config.resolve.extensions.push(".ts", ".tsx", ".css")
-    config.resolve.alias.consumerStories = path.resolve(__dirname, pathConsumer, "src")
+    config.resolve.alias.consumer = path.resolve(__dirname, pathConsumer, "src")
   }
   return config
 }

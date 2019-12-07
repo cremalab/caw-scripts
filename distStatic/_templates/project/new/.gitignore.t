@@ -1,3 +1,6 @@
+---
+to: .gitignore
+---
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -17,6 +20,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+storybook-static
 
 npm-debug.log*
 yarn-debug.log*

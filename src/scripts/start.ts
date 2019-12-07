@@ -1,6 +1,8 @@
-import { runBinary } from "../utils/runBinary"
+import spawn from "cross-spawn"
+import { args } from "../utils/args"
 
-runBinary("react-scripts", ["start"], true, {
+spawn.sync("react-scripts", ["start", ...args()], {
+  stdio: "inherit",
   env: {
     ...process.env,
     EXTEND_ESLINT: "true",

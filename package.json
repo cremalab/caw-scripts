@@ -1,20 +1,16 @@
 {
-  "name": "caw-scripts",
+  "name": "caws",
   "version": "0.1.0",
   "description": "Crema App Web as a package",
   "author": "",
   "license": "ISC",
-  "bin": {
-    "caw-scripts": "./dist/index.js"
-  },
+  "bin": "./dist/index.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     ".eslintrc.js",
-    ".storybook",
-    "_templates",
     "dist",
-    "templateApp"
+    "distStatic"
   ],
   "scripts": {
     "start": "npm run build -- -w",

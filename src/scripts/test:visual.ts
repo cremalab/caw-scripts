@@ -1,17 +1,19 @@
-import { runBinary } from "../utils/runBinary"
+import spawn from "cross-spawn"
+import { args } from "../utils/args"
 
-runBinary(
+spawn.sync(
   "loki",
   [
     "--port",
     "9009",
-    "--chromeDockerImage=yukinying/chrome-headless-browser-xl:74.0.3729.28",
+    "--chromeDockerImage=yukinying/chrome-headless-browser-xl:78.0.3904.17",
+    ...args(),
   ],
-  true,
   {
+    stdio: "inherit",
     env: {
-      ...process.env,
       CI: "true",
+      ...process.env,
     },
   },
 )
