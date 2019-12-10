@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`dist works 1`] = `
-"├── .storybook
+"
+/<PROJECT_DIR>/dist
+├── .storybook
 |  ├── addons.d.ts
 |  ├── addons.js
 |  ├── addons.js.map
@@ -97,5 +99,5 @@ directory: 3 file: 87
 ignored
 
 
-[2K[1G,"
+[2K[1G"
 `;
