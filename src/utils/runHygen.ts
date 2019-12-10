@@ -14,11 +14,7 @@ export const runHygen = (generator: Generator) => {
   })
 
   // 2. Run Hygen with npx (allows us to test this locally)
-  spawn.sync(
-    "node",
-    [pathPackage + "/node_modules/.bin/hygen", generator, "new"],
-    { stdio: "inherit" },
-  )
+  spawn.sync("npx", ["hygen", generator, "new"], { stdio: "inherit" })
 
   // 3. Remove the linked _templates from cwd
   return spawn.sync("rm", [pathConsumerTemplates], { stdio: "inherit" })
