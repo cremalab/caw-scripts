@@ -1,7 +1,10 @@
 import spawn from "cross-spawn"
 import { args } from "../utils/args"
+import { removeReactAppEnv } from "../utils/removeReactAppEnv"
 
-spawn.sync("react-scripts", ["test", ...args()], {
+removeReactAppEnv()
+
+spawn("react-scripts", ["test", ...args()], {
   stdio: "inherit",
   env: {
     ...process.env,
