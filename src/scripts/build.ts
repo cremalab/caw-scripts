@@ -1,6 +1,11 @@
-import { runBinary } from "../utils/runBinary"
+import { args } from "../utils/args"
+import { removeReactAppEnv } from "../utils/removeReactAppEnv"
+import spawn = require("cross-spawn")
 
-runBinary("react-scripts", ["build"], true, {
+removeReactAppEnv()
+
+spawn("react-scripts", ["build", ...args()], {
+  stdio: "inherit",
   env: {
     ...process.env,
     EXTEND_ESLINT: "true",

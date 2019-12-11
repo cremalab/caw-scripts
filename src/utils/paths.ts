@@ -6,3 +6,4 @@ export const pathPackageGet = () =>
 
 export const pathConsumer = pathConsumerGet()
 export const pathPackage = pathPackageGet()
+export const pathPackageStorybook = path.join(pathPackage, "/dist/.storybook")

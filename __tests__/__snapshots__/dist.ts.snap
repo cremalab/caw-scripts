@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dist works 1`] = `
+"
+/<PROJECT_DIR>/dist
+├── .storybook
+|  ├── addons.d.ts
+|  ├── addons.js
+|  ├── addons.js.map
+|  ├── config.d.ts
+|  ├── config.js
+|  ├── config.js.map
+|  ├── webpack.config.d.ts
+|  ├── webpack.config.js
+|  └── webpack.config.js.map
+├── index.d.ts
+├── index.js
+├── index.js.map
+├── scripts
+|  ├── build.d.ts
+|  ├── build.js
+|  ├── build.js.map
+|  ├── build:visual.d.ts
+|  ├── build:visual.js
+|  ├── build:visual.js.map
+|  ├── init.d.ts
+|  ├── init.js
+|  ├── init.js.map
+|  ├── new:component.d.ts
+|  ├── new:component.js
+|  ├── new:component.js.map
+|  ├── new:type.d.ts
+|  ├── new:type.js
+|  ├── new:type.js.map
+|  ├── new:util.d.ts
+|  ├── new:util.js
+|  ├── new:util.js.map
+|  ├── start.d.ts
+|  ├── start.js
+|  ├── start.js.map
+|  ├── start:ci.d.ts
+|  ├── start:ci.js
+|  ├── start:ci.js.map
+|  ├── start:visual.d.ts
+|  ├── start:visual.js
+|  ├── start:visual.js.map
+|  ├── start:visual:ci.d.ts
+|  ├── start:visual:ci.js
+|  ├── start:visual:ci.js.map
+|  ├── test:lint.d.ts
+|  ├── test:lint.js
+|  ├── test:lint.js.map
+|  ├── test:lint:fix.d.ts
+|  ├── test:lint:fix.js
+|  ├── test:lint:fix.js.map
+|  ├── test:unit.d.ts
+|  ├── test:unit.js
+|  ├── test:unit.js.map
+|  ├── test:unit:coverage.d.ts
+|  ├── test:unit:coverage.js
+|  ├── test:unit:coverage.js.map
+|  ├── test:unit:coverage:ci.d.ts
+|  ├── test:unit:coverage:ci.js
+|  ├── test:unit:coverage:ci.js.map
+|  ├── test:visual.d.ts
+|  ├── test:visual.js
+|  ├── test:visual.js.map
+|  ├── test:visual:approve.d.ts
+|  ├── test:visual:approve.js
+|  ├── test:visual:approve.js.map
+|  ├── test:visual:ci.d.ts
+|  ├── test:visual:ci.js
+|  ├── test:visual:ci.js.map
+|  ├── test:visual:update.d.ts
+|  ├── test:visual:update.js
+|  └── test:visual:update.js.map
+├── types.d.ts
+├── types.js
+├── types.js.map
+└── utils
+   ├── answerPrompts.d.ts
+   ├── answerPrompts.js
+   ├── answerPrompts.js.map
+   ├── args.d.ts
+   ├── args.js
+   ├── args.js.map
+   ├── paths.d.ts
+   ├── paths.js
+   ├── paths.js.map
+   ├── removeReactAppEnv.d.ts
+   ├── removeReactAppEnv.js
+   ├── removeReactAppEnv.js.map
+   ├── runHygen.d.ts
+   ├── runHygen.js
+   └── runHygen.js.map
+
+directory: 3 file: 87
+
+ignored
+
+
+[2K[1G"
+`;

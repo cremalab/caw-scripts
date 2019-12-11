@@ -1,12 +1,18 @@
 import spawn from "cross-spawn"
 import { pathPackage, pathConsumer } from "../utils/paths"
 import path from "path"
+import { runHygen } from "../utils/runHygen"
 
-const templatePath = path.join(pathPackage, "./templateApp")
-const templateSrc = templatePath + "/."
-const templateDst = path.join(pathConsumer, ".")
+// Define "to" path
+const templateTo = pathConsumer
 
-spawn.sync("rm", [templatePath + "/.npmignore"], { stdio: "inherit" })
-spawn.sync("cp", ["-R", templateSrc, templateDst], { stdio: "inherit" })
+// Define "from" for copying template app files
+const templateAppPath = path.join(pathPackage, "distStatic", "app")
+const templateAppFrom = templateAppPath + "/."
+
+// Copy template app to destination
+spawn.sync("cp", ["-R", templateAppFrom, templateTo], { stdio: "inherit" })
+
+runHygen("project")
 
 console.log("✅ Initialization complete!")
