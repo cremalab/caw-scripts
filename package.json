@@ -1,10 +1,12 @@
 {
-  "name": "caws",
+  "name": "@cremalab/caws",
   "version": "0.1.0",
-  "description": "Crema App Web as a package",
+  "description": "Crema App Web Scripts",
   "author": "",
   "license": "ISC",
-  "bin": "./dist/index.js",
+  "bin": {
+    "caws": "./dist/index.js"
+  },
   "main": "./dist/index.js",
   "types": "./dist/types.d.ts",
   "files": [
